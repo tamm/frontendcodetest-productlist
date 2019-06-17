@@ -1,0 +1,20 @@
+{
+  "name": "frontendcodetest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "ui": "vue ui",
+    "setup": "yarn install; cd ./prototype; yarn install",
+    "dev": "cd ./prototype; yarn serve",
+    "test": "cd ./prototype; yarn test:unit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vue/cli": "^3.8.4"
+  }
+}
