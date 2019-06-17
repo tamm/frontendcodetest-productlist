@@ -1,0 +1,17 @@
+wider-than(var)
+  condition = 'screen and (min-width: %s)' % var
+  @media condition
+    {block}
+
+narrower-than(var)
+  condition = 'screen and (max-width: %s)' % var
+  @media condition
+    {block}
+
+mobile-only()
+  +narrower-than(sm)
+    {block}
+
+desktop-only()
+  +wider-than(lg)
+    {block}
